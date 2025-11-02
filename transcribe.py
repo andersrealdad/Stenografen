@@ -31,7 +31,8 @@ def main():
 
     if transcribed == 0:
         # No transcription needed, play random chiptune with GUI for input handling
-        myth_files = glob.glob('myth/*')
+        base_path = getattr(sys, '_MEIPASS', os.getcwd())
+        myth_files = glob.glob(os.path.join(base_path, 'myth', '*'))
         if not myth_files:
             # Can't show error without console, so just exit
             return
