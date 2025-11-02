@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+.env
+
+# Build
+build/
+dist/
+*.spec
+
+# Binaries
+ffmpeg.exe
+ffprobe.exe
+ffmpeg.zip
+ffmpeg-*.zip
+
+# Media / test files
+*.webm
+*.mp4
+*.wav
+*.txt
+
+# IDE / OS
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
